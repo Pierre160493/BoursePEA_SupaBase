@@ -33,7 +33,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final _future = Supabase.instance.client
-      .from('countries')
+      // .from('countries')
+      .from('titres')
       .select<List<Map<String, dynamic>>>();
 
   @override
